@@ -1,14 +1,9 @@
 from django.shortcuts import render
-from django.http import HttpResponse
-from .models import ToDoList, Item
+from .models import ToDoList
 
 def index(response, name):
     ls = ToDoList.objects.get(name=name)
-    item = ls.item_set.get(id=1)
+    return render(response, "main/list.html", {"name": ls.name})
 
-    return HttpResponse("""
-    <h1> %s </h1>
-    <br></br>
-    <p>%s</p>
-    """     
-    % (ls.name, str(item.text)))
+def home(response):
+    return render(response, "main/home.html", {})

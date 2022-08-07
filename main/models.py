@@ -1,5 +1,3 @@
-from pyexpat import model
-from statistics import mode
 from django.db import models
 
 # Making a class to store data | Inheritate from django.db.models
