@@ -11,4 +11,4 @@ def index(response, name):
     <br></br>
     <p>%s</p>
     """     
-        % (ls.name, str(item.text)))
+    % (ls.name, str(item.text)))
