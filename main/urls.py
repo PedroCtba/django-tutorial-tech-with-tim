@@ -3,7 +3,7 @@ from . import views
 
 urlpatterns = [
     # Path for home page
-    path("", views.home),
+    path("home/", views.home),
     
     # Paths for todo list's
     path("<int:id>", views.index, name="index"),
