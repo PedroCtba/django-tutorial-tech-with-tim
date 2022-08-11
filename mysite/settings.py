@@ -37,7 +37,9 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'main.apps.MainConfig', # Its necessary to register your app here if you want it to have a database
+    # Its necessary to register your apps here if you want it to have a database
+    'main.apps.MainConfig', 
+    'register.apps.RegisterConfig'
 ]
 
 MIDDLEWARE = [
