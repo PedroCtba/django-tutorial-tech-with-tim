@@ -11,4 +11,6 @@ urlpatterns = [
     # Path for creating a todo list
     path("create/", views.create, name="create"),
 
+    # Path view the users todo list's
+    path("view/", views.view, name="view"),
 ]
