@@ -39,7 +39,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     # Its necessary to register your apps here if you want it to have a database
     'main.apps.MainConfig', 
-    'register.apps.RegisterConfig'
+    'register.apps.RegisterConfig',
+    'crispy_forms'
 ]
 
 MIDDLEWARE = [
@@ -124,3 +125,4 @@ STATIC_URL = 'static/'
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+CRISPY_TEMPLATE_PACK = "bootstrap4"
